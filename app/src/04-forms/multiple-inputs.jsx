@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 const MultipleInputs = () => {
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    street_address1: "",
+    street_address2: "",
+    city: "",
+    country: "",
+    postcode: ""
+  });
+
   const handleSubmit = (e) => {
     e.preventDefault();
-  }
+    console.log(formData);
+  };
+
+  const handleChange = (e) => {
+    // console.log(e.target.value);
+    // console.log(e.target.name);
+    setFormData({
+      // Preserve the values that aren't being updated
+      ...formData,
+      [e.target.name]: e.target.value
+});
+};
 
   return (
     <div>
@@ -15,6 +36,9 @@ const MultipleInputs = () => {
             name
           </label>
           <input
+            onChange={handleChange}
+            value={formData.name}
+            name="name"
             type="text"
             className="form-input"
             id="name"
@@ -25,6 +49,9 @@ const MultipleInputs = () => {
             Email
           </label>
           <input
+            onChange={handleChange}
+            value={formData.email}
+            name="email"
             type="email"
             className="form-input"
             id="email"
@@ -35,6 +62,9 @@ const MultipleInputs = () => {
             Street Address 1
           </label>
           <input
+            onChange={handleChange}
+            value={formData.street_address1}
+            name="street_address1"
             type="text"
             className="form-input"
             id="street-address-1"
@@ -45,6 +75,9 @@ const MultipleInputs = () => {
             Street Address 2
           </label>
           <input
+            onChange={handleChange}
+            value={formData.street_address2}
+            name="street_address2"
             type="text"
             className="form-input"
             id="street-address-2"
@@ -55,6 +88,9 @@ const MultipleInputs = () => {
             City
           </label>
           <input
+            onChange={handleChange}
+            value={formData.city}
+            name="city"
             type="text"
             className="form-input"
             id="city"
@@ -65,6 +101,9 @@ const MultipleInputs = () => {
             Country
           </label>
           <input
+            onChange={handleChange}
+            value={formData.country}
+            name="country"
             type="text"
             className="form-input"
             id="country"
@@ -75,6 +114,9 @@ const MultipleInputs = () => {
           Postcode
           </label>
           <input
+            onChange={handleChange}
+            value={formData.postcode}
+            name="postcode"
             type="text"
             className="form-input"
             id="postcode"
