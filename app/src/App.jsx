@@ -7,12 +7,16 @@ import './App.css'
 // import UseEffectMultiple from './02-useEffect/useEffect-multiple'
 // import UseEffectFetchData from './02-useEffect/useEffect-fetch-data' 
 // import MultipleReturns from './03-conditional-rendering/multiple-returns'
-import FetchingData from './03-conditional-rendering/fetching-data'
+// import FetchingData from './03-conditional-rendering/fetching-data'
+// import ShortCircuitOverview from './03-conditional-rendering/short-circuit-overview'
+import ShortCircuitExample from './03-conditional-rendering/short-circuit-example'
 
 function App() {
   return (
     <div className="container">
-     <FetchingData />
+     <ShortCircuitExample />
+     {/* <ShortCircuitOverview /> */}
+     {/* <FetchingData /> */}
      {/* <MultipleReturns /> */}
      {/* <UseEffectFetchData /> */}
      {/* <UseEffectMultiple /> */}
