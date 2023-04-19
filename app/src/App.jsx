@@ -9,12 +9,14 @@ import './App.css'
 // import MultipleReturns from './03-conditional-rendering/multiple-returns'
 // import FetchingData from './03-conditional-rendering/fetching-data'
 // import ShortCircuitOverview from './03-conditional-rendering/short-circuit-overview'
-import ShortCircuitExample from './03-conditional-rendering/short-circuit-example'
+// import ShortCircuitExample from './03-conditional-rendering/short-circuit-example'
+import TernaryOperatorChallenge from './03-conditional-rendering/ternary-operator-challenge'
 
 function App() {
   return (
     <div className="container">
-     <ShortCircuitExample />
+     <TernaryOperatorChallenge /> 
+     {/* <ShortCircuitExample /> */}
      {/* <ShortCircuitOverview /> */}
      {/* <FetchingData /> */}
      {/* <MultipleReturns /> */}
