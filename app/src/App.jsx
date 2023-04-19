@@ -13,10 +13,12 @@ import './App.css'
 // import TernaryOperatorChallenge from './03-conditional-rendering/ternary-operator-challenge'
 // import ControlledInputs from './04-forms/controlled-inputs'
 // import MultipleInputs from './04-forms/multiple-inputs.jsx';
+import Navbar from './05-context-api/propdrill-challenge-navbar'
 
 function App() {
   return (
-    <div className="container">
+    <div>
+     <Navbar />
      {/* <MultipleInputs /> */}
      {/* <ControlledInputs /> */}
      {/* <TernaryOperatorChallenge />  */}
