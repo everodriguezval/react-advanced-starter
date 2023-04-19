@@ -10,12 +10,14 @@ import './App.css'
 // import FetchingData from './03-conditional-rendering/fetching-data'
 // import ShortCircuitOverview from './03-conditional-rendering/short-circuit-overview'
 // import ShortCircuitExample from './03-conditional-rendering/short-circuit-example'
-import TernaryOperatorChallenge from './03-conditional-rendering/ternary-operator-challenge'
+// import TernaryOperatorChallenge from './03-conditional-rendering/ternary-operator-challenge'
+import ControlledInputs from './04-forms/controlled-inputs'
 
 function App() {
   return (
     <div className="container">
-     <TernaryOperatorChallenge /> 
+     <ControlledInputs />
+     {/* <TernaryOperatorChallenge />  */}
      {/* <ShortCircuitExample /> */}
      {/* <ShortCircuitOverview /> */}
      {/* <FetchingData /> */}
