@@ -4,6 +4,13 @@ const UseEffectMultiple = () => {
   const [firstCount, setFirstCount] = useState(0);
   const [secondCount, setSecondCount] = useState(0);
 
+  // First useEffect
+  useEffect(() => {console.log('Hello from the first useEffect');}, [firstCount, secondCount]);
+
+  // Second useEffect
+  useEffect(() => {console.log('Hello from the second useEffect');}, [secondCount]);
+
+
   return (
     <>
       <h2>Multiple useEffects</h2>
